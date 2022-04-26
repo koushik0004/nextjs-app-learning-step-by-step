@@ -16,15 +16,12 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 ### Codes implemented in this branch
 
-used catch all routes feature offers by next.js
-If go for [docs page](http://localhost:3000/docs) then it will landed on 404 page. As we still not implemented index.js file inside the docs folder
+Use Link component in next in products/index.js file
+Also implemented programatic route (on button click page navigation) [in is in pages/index.js]
 
-In order to see the route params and page content then navgate to [http://localhost:3000/docs/feature1](http://localhost:3000/docs/feature1). Now we can add multiple route params after feature1. all will be captured.
-Check in console.. all the sent routes will be visible as an array.
-e.g. [http://localhost:3000/docs/feature1/catalog1](http://localhost:3000/docs/feature1/catalog1) or [http://localhost:3000/docs/feature1/catalog1/example1](http://localhost:3000/docs/feature1/catalog1/example1)
+#### Small hack to remember
 
-#### Small hack
+Link component takes [replace: boolean] prop along with href prop
+If we use replace prop then once we ant to use back button of browser it will landed over the home page, instade last navigated page
 
-In order to make [docs page](http://localhost:3000/docs) - page working we need to update the file name inside the docs folder.
-in place of [...params].js file name we need to update the name as [[...params]].js and voila.. will work.
-Check the same sort of implementations with [vehicles] folder
+In case of router.push(), we can use replace prop by calling router.replace() instade of routre.push(), will behave same.
