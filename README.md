@@ -18,6 +18,7 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 Use Link component in next in products/index.js file
 Also implemented programatic route (on button click page navigation) [in is in pages/index.js]
+Also added custom 404 page, pages/404.js
 
 #### Small hack to remember
 
